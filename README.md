@@ -2,7 +2,7 @@
 
 ### (Claudeslop README)
 
-A high-performance text similarity search system using binary embeddings and GPU-accelerated search algorithms.
+A high-performance text similarity search system using binary embeddings and GPU-accelerated search algorithms. It lets one search all of enwik9 (3 million chunks of 512 characters each) in sub 50ms on an M3 Max.
 
 ## Overview
 
