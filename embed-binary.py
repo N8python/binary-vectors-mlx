@@ -39,7 +39,7 @@ def get_embedding_and_pack(texts, model, tokenizer):
     return np.array(embeddings_packed.tolist(), dtype=np.uint64)
 
 # Read and chunk the corpus
-with open("enwik8.txt", "r") as f:
+with open("enwik7.txt", "r") as f:
     chunk_size = 512
     stride_size = 256
     text = f.read()
@@ -66,10 +66,9 @@ packed_embeddings = np.vstack(packed_embeddings_list)
 print(f"Packed embeddings shape: {packed_embeddings.shape}")
 
 # Save the packed embeddings to a file
-np.save("embeddings-enwik8.npy", packed_embeddings)
+np.save("embeddings-enwik7.npy", packed_embeddings)
 
 # Save the chunks to a file
-with open("chunks-enwik8.json", "w") as f:
+with open("chunks-enwik7.json", "w") as f:
     json.dump(chunks, f)
 
-print("Done! Saved packed embeddings to embeddings.npy and chunks to chunks.json")

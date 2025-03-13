@@ -346,8 +346,8 @@ def main():
     """Example usage of the BinaryEmbeddingSearch class"""
     # Initialize and load resources
     searcher = BinaryEmbeddingSearch(
-        embeddings_path="embeddings-enwik9.npy",
-        chunks_path="chunks-enwik9.json"
+        embeddings_path="embeddings-enwik7.npy",
+        chunks_path="chunks-enwik7.json"
     )
     
     # Run benchmark

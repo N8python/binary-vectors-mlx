@@ -9,12 +9,12 @@ class Enwik9SearchGUI(tk.Tk):
         super().__init__()
         
         # Configure the main window
-        self.title("Enwik9 Binary Embedding Search")
+        self.title("Enwik7 Binary Embedding Search")
         self.geometry("900x700")
         
         # Initialize default paths
-        self.embeddings_path = "embeddings-enwik9.npy"
-        self.chunks_path = "chunks-enwik9.json"
+        self.embeddings_path = "embeddings-enwik7.npy"
+        self.chunks_path = "chunks-enwik7.json"
         self.model_name = "sentence-transformers/all-MiniLM-L6-v2"
         
         # Initialize flags and searcher
